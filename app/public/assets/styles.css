@@ -1,15 +1,14 @@
-/* Define the local font face */
 @font-face {
     font-family: 'MedievalSharp';
-    src: url('../fonts/MedievalSharp.woff2') format('woff2');
+    src: url('fonts/MedievalSharp.woff2') format('woff2');
 }
 
 body.magic-book {
     color: #ffffff;
-    font-family: 'MedievalSharp', sans-serif; /* Changed to local font */
+    font-family: 'MedievalSharp', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('../images/korsikov_blog_background_image.webp'), radial-gradient(circle, #1a1a1a 10%, #0a0a0a 90%);
+    background-image: url('images/korsikov_blog_background_image.webp'), radial-gradient(circle, #1a1a1a 10%, #0a0a0a 90%);
     background-blend-mode: overlay;
 }
 
@@ -18,7 +17,7 @@ header, footer {
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
-    border: 1px solid #666666; /* Combined border properties */
+    border: 1px solid #666666;
 }
 
 .header-title {
@@ -205,4 +204,20 @@ header, footer {
 .button.burgundy:hover {
     background-color: #b32b3a;
     border-color: #b32b3a;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-icon {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #ffcc00;
 }

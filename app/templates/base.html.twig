@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Welcome!{% endblock %}</title>
-    <link rel="icon" href="{{ asset('images/korsikov_blog_snake.webp') }}">
-    <link rel="stylesheet" href="{{ asset('fonts/MedievalSharp.woff2') }}">
+    <link rel="icon" href="{{ asset('assets/images/korsikov_blog_snake.webp') }}">
+    <link rel="stylesheet" href="{{ asset('assets/fonts/MedievalSharp.woff2') }}">
     {% block stylesheets %}
-        <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/styles.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/fontawesome/css/all.min.css') }}">
     {% endblock %}
 </head>
 <body class="magic-book">
@@ -26,6 +27,12 @@
 
 <footer>
     <p>&copy; {{ "now"|date("Y") }} Arcane Compendium</p>
+    <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+    </div>
 </footer>
 
 {% block javascripts %}
