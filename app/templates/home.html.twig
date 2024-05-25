@@ -3,15 +3,37 @@
 {% block title %}Home Page{% endblock %}
 
 {% block body %}
-    <section>
+    <section class="card">
         <h2>Introduction</h2>
-        <p>This is the home page of your Symfony application. Feel free to customize it as needed.</p>
+        <p>This is the home page of your Arcane Compendium. Feel free to customize it as needed.</p>
+        <p class="highlight">Highlighted text using the yellow color.</p>
+        <p class="icon">This is an example of text styled as an icon.</p>
     </section>
 
-    <section>
+    <section class="card">
         <h2>About</h2>
-        <p>Here you can add more information about your application.</p>
+        <p>Here you can add more information about your mystical application.</p>
+        <p class="highlight">Another example of highlighted text.</p>
+        <p class="icon">More text styled as an icon.</p>
     </section>
 
-    <!-- Add more sections as needed -->
+    <section class="grid-container">
+        <div class="grid-item">
+            <h3>Grid Item 1</h3>
+            <p>This is a grid item.</p>
+        </div>
+        <div class="grid-item">
+            <h3>Grid Item 2</h3>
+            <p>This is a grid item.</p>
+        </div>
+        <div class="grid-item">
+            <h3>Grid Item 3</h3>
+            <p>This is a grid item.</p>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Tooltip Example</h2>
+        <p>Hover over the text to see the tooltip: <span class="tooltip">Tooltip text<span class="tooltiptext">Tooltip info</span></span></p>
+    </section>
 {% endblock %}

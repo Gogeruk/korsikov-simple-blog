@@ -1,0 +1,202 @@
+body.magic-book {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/korsikov_blog_background_image.webp'), radial-gradient(circle, #1a1a1a 10%, #0a0a0a 90%);
+    background-blend-mode: overlay;
+}
+
+header, footer {
+    background-color: rgba(10, 10, 10, 0.9);
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    border: 1px solid #666666; /* Combined border properties */
+}
+
+.header-title {
+    font-size: 2.5em;
+    color: #ffcc00;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.navigation ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-button {
+    position: relative;
+    padding: 10px 25px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffcc00;
+    font-weight: bold;
+    border: 2px solid #ffcc00;
+    transform: skewX(-20deg);
+    display: inline-block;
+    border-radius: 0;
+}
+
+.home-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.home-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.home-button::before {
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    color: #ffcc00;
+    font-size: 20px;
+    transform: skewX(20deg);
+}
+
+.navigation ul li a:hover {
+    color: #b3b3b3;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: rgba(26, 26, 26, 0.8);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card h2 {
+    color: #ffcc00;
+    border-bottom: 1px solid #666666;
+}
+
+.card p {
+    color: #b3b3b3;
+}
+
+.highlight {
+    color: #ffcc00;
+}
+
+.icon {
+    color: #666666;
+}
+
+.button {
+    background-color: #ffcc00;
+    border: none;
+    color: #0a0a0a;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #b3b3b3;
+    color: #0a0a0a;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: rgba(26, 26, 26, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #666666;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #666666;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card h2::after {
+    content: "";
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    border-bottom: 2px solid #800020;
+}
+
+.button.burgundy {
+    background-color: #800020;
+    border: 2px solid #800020;
+    color: #ffffff;
+}
+
+.button.burgundy:hover {
+    background-color: #b32b3a;
+    border-color: #b32b3a;
+}
