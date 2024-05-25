@@ -9,20 +9,14 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * Class HomeController
+ * Class ContactController
  * @package App\Controller
  */
-class HomeController extends AbstractController
+class ContactController extends AbstractController
 {
-    #[Route('/home', name: 'home_page', methods: ['GET'])]
-    public function homePage(): Response
-    {
-        return $this->render('home.html.twig');
-    }
-
     #[Route('/contact', name: 'contact_page', methods: ['GET'])]
     public function contactPage(): Response
     {
-        return $this->render('contact.html.twig');
+        return $this->render('home.html.twig');
     }
 }

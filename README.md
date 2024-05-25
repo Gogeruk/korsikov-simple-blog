@@ -14,7 +14,6 @@
 4. CV page.
 5. REMOVE UNUSED fontawesome icons.
 6. Add proper credits page.
-   - Fontawesome credits.
    - Symfony credits.
    - MedicalSharp font credits.
    - etc...

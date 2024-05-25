@@ -1,8 +1,10 @@
+/* Fonts */
 @font-face {
     font-family: 'MedievalSharp';
     src: url('fonts/MedievalSharp.woff2') format('woff2');
 }
 
+/* Body */
 body.magic-book {
     color: #ffffff;
     font-family: 'MedievalSharp', sans-serif;
@@ -12,6 +14,7 @@ body.magic-book {
     background-blend-mode: overlay;
 }
 
+/* Header and Footer */
 header, footer {
     background-color: rgba(10, 10, 10, 0.9);
     color: #ffffff;
@@ -25,6 +28,7 @@ header, footer {
     color: #ffcc00;
 }
 
+/* Navigation */
 .navigation ul {
     list-style: none;
     padding: 0;
@@ -83,6 +87,7 @@ header, footer {
     color: #b3b3b3;
 }
 
+/* Container */
 .container {
     width: 90%;
     max-width: 900px;
@@ -90,6 +95,7 @@ header, footer {
     padding: 20px;
 }
 
+/* Card */
 .card {
     background-color: rgba(26, 26, 26, 0.8);
     padding: 20px;
@@ -115,6 +121,7 @@ header, footer {
     color: #666666;
 }
 
+/* Button */
 .button {
     background-color: #ffcc00;
     border: none;
@@ -134,6 +141,7 @@ header, footer {
     color: #0a0a0a;
 }
 
+/* Grid */
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -148,6 +156,7 @@ header, footer {
     border: 1px solid #666666;
 }
 
+/* Tooltip */
 .tooltip {
     position: relative;
     display: inline-block;
@@ -175,6 +184,7 @@ header, footer {
     opacity: 1;
 }
 
+/* Responsive Grid */
 @media (min-width: 768px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
@@ -206,18 +216,65 @@ header, footer {
     border-color: #b32b3a;
 }
 
+/* Social Media */
 .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     margin-top: 20px;
 }
 
+.social-link-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
 .social-icon {
-    color: #ffffff;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 1.5em;
-    transition: color 0.3s;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+    transition: transform 0.3s;
 }
 
 .social-icon:hover {
+    transform: scale(1.1);
+}
+
+.github-icon {
+    background-image: url('images/icons/korsikov_blog_github.webp');
+}
+
+.messenger-icon {
+    background-image: url('images/icons/korsikov_blog_messenger.webp');
+}
+
+.whatsapp-icon {
+    background-image: url('images/icons/korsikov_blog_whatsapp.webp');
+}
+
+.linkedin-icon {
+    background-image: url('images/icons/korsikov_blog_linkedin.webp');
+}
+
+.email-icon {
+    background-image: url('images/icons/korsikov_blog_email.webp');
+}
+
+.social-link-item p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.social-link-item a {
     color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-link-item a:hover {
+    color: #b3b3b3;
 }
