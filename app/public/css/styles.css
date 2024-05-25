@@ -1,6 +1,12 @@
+/* Define the local font face */
+@font-face {
+    font-family: 'MedievalSharp';
+    src: url('../fonts/MedievalSharp.woff2') format('woff2');
+}
+
 body.magic-book {
     color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'MedievalSharp', sans-serif; /* Changed to local font */
     margin: 0;
     padding: 0;
     background-image: url('../images/korsikov_blog_background_image.webp'), radial-gradient(circle, #1a1a1a 10%, #0a0a0a 90%);
