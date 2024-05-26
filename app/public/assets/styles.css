@@ -252,10 +252,6 @@ header, footer {
     background-image: url('images/icons/korsikov_blog_messenger.webp');
 }
 
-.whatsapp-icon {
-    background-image: url('images/icons/korsikov_blog_whatsapp.webp');
-}
-
 .linkedin-icon {
     background-image: url('images/icons/korsikov_blog_linkedin.webp');
 }
@@ -277,4 +273,23 @@ header, footer {
 
 .social-link-item a:hover {
     color: #b3b3b3;
+}
+
+/* Avatar */
+.avatar-container {
+    text-align: center;
+    margin-top: -25px;
+    margin-bottom: -40px;
+}
+
+.avatar {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.5);
 }
