@@ -47,7 +47,7 @@ header, footer {
     font-weight: bold;
 }
 
-.home-button {
+.nav-button {
     position: relative;
     padding: 10px 25px;
     background-color: rgba(0, 0, 0, 0.6);
@@ -59,7 +59,7 @@ header, footer {
     border-radius: 0;
 }
 
-.home-button::before {
+.nav-button::before {
     content: "";
     position: absolute;
     top: 0;
@@ -70,11 +70,11 @@ header, footer {
     border-bottom: 20px solid transparent;
 }
 
-.home-button:hover {
+.nav-button:hover {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.home-button::before {
+.nav-button::before {
     position: absolute;
     left: -10px;
     top: 50%;

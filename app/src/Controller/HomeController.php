@@ -14,9 +14,7 @@ use Symfony\Component\Routing\Annotation\Route;
  */
 class HomeController extends AbstractController
 {
-    // TOD:
-    // set /home to / for SEO
-    #[Route('/home', name: 'home_page', methods: ['GET'])]
+    #[Route('/', name: 'home_page', methods: ['GET'])]
     public function homePage(): Response
     {
         return $this->render('home.html.twig');
