@@ -1,9 +1,8 @@
 framework:
     secret: '%env(APP_SECRET)%'
-    #csrf_protection: true
     annotations: false
     http_method_override: false
-    handle_all_throwables: true
+    handle_all_throwables: false
 
     session:
         handler_id: null
@@ -11,10 +10,4 @@ framework:
         cookie_samesite: lax
 
     php_errors:
-        log: true
-
-when@test:
-    framework:
-        test: true
-        session:
-            storage_factory_id: session.storage.factory.mock_file
+        log: false
