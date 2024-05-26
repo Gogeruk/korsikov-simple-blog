@@ -17,6 +17,6 @@ class ContactController extends AbstractController
     #[Route('/contact', name: 'contact_page', methods: ['GET'])]
     public function contactPage(): Response
     {
-        return $this->render('home.html.twig');
+        return $this->render('contact.html.twig');
     }
 }
