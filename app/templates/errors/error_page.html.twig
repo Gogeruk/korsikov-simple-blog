@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Error Page{% endblock %}
+
+{% block body %}
+    <section class="card">
+        <h2>Error Page</h2>
+        <p>{{ exception.message }}</p>
+    </section>
+{% endblock %}
