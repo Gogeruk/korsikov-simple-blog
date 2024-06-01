@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Welcome!{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to My Arcane Compendium, a blog where you can explore fascinating articles about magic, mysticism, and more.">
+    <meta name="keywords" content="magic, mysticism, blog, arcane, compendium">
+    <meta name="author" content="Your Name">
+    <title>{% block title %}Welcome to My Arcane Compendium{% endblock %}</title>
     <link rel="icon" href="{{ asset('assets/images/korsikov_blog_snake.webp') }}">
     <link rel="stylesheet" href="{{ asset('assets/fonts/MedievalSharp.woff2') }}">
     {% block stylesheets %}
@@ -19,7 +23,7 @@
         <ul>
             <li><a href="{{ path('home_page') }}" class="nav-button">Home</a></li>
             <li><a href="{{ path('contact_page') }}" class="nav-button">Contact</a></li>
-            <!-- Add other navigation links here -->
+{#            <li><a href="{{ path('blog_page') }}" class="nav-button">Blog</a></li>#}
         </ul>
     </nav>
 </header>
@@ -28,8 +32,15 @@
     {% block body %}{% endblock %}
 </main>
 
+<footer class="footer">
+    <div class="container">
+        <p>&copy; {{ "now"|date("Y") }} My Arcane Compendium. All rights reserved.</p>
+        <p>Email: <a href="mailto:contact@yourdomain.com">contact@yourdomain.com ✨</a></p>
+        <p><a href="{{ path('about_page') }}">About Us</a> | <a href="{{ path('privacy_policy_page') }}">Privacy Policy</a></p>
+    </div>
+</footer>
+
 {% block javascripts %}
-    <!-- Include your JavaScript files here if needed -->
 {% endblock %}
 </body>
 </html>

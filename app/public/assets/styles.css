@@ -314,3 +314,90 @@ header, footer {
 .avatar:hover {
     transform: scale(1.5);
 }
+
+/* Footer */
+.footer {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #666666;
+}
+
+.footer .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    color: #b3b3b3;
+}
+
+/* About Section */
+.about-section {
+    background-color: rgba(26, 26, 26, 0.8);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-section h2, .about-section h3 {
+    color: #ffcc00;
+    border-bottom: 1px solid #666666;
+}
+
+.about-section p {
+    color: #b3b3b3;
+}
+
+.about-section a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.about-section a:hover {
+    color: #b3b3b3;
+}
+
+/* Privacy Policy Section */
+.privacy-policy-section {
+    background-color: rgba(26, 26, 26, 0.8);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.privacy-policy-section h2, .privacy-policy-section h3 {
+    color: #ffcc00;
+    border-bottom: 1px solid #666666;
+}
+
+.privacy-policy-section p, .privacy-policy-section ul {
+    color: #b3b3b3;
+}
+
+.privacy-policy-section a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.privacy-policy-section a:hover {
+    color: #b3b3b3;
+}
+
+.privacy-policy-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
