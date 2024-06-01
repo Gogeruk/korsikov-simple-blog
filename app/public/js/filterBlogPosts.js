@@ -27,12 +27,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 posts.forEach(post => {
                     post.slug = post.slug.replace(/^blog\//, '');
-                    post.tags = post.tags.map(tag => tag.name);
 
                     const postElement = document.createElement('li');
                     postElement.innerHTML = `
                         <a href="/blog/${post.slug}">${post.title}</a>
-                        <small>Tags: ${post.tags.join(', ')}</small>
                     `;
                     postList.appendChild(postElement);
                 });

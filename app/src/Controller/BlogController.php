@@ -58,7 +58,7 @@ class BlogController extends AbstractController
         // remove duplicate tags
         $allTags = array_unique($allTags);
 
-        return $this->render('blog/index.html.twig', [
+        return $this->render('blog/blog.html.twig', [
             'posts'       => $posts,
             'all_tags'    => $allTags,
             'current_tag' => $tag,
@@ -86,7 +86,7 @@ class BlogController extends AbstractController
         $parsedown = new Parsedown();
         $htmlContent = $parsedown->text($markdown);
 
-        return $this->render('blog/index.html.twig', [
+        return $this->render('blog/blog.html.twig', [
             'content'     => $htmlContent,
             'title'       => $metadata['title'] ?? ucfirst($slug),
             'tags'        => $metadata['tags'] ?? [],
