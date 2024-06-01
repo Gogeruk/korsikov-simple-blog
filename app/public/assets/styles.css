@@ -149,39 +149,56 @@ header, footer {
 }
 
 .grid-item {
-    background-color: rgba(26, 26, 26, 0.8);
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    border: 1px solid #666666;
-}
-
-/* Tooltip */
-.tooltip {
     position: relative;
-    display: inline-block;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: #666666;
-    color: #fff;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #666666;
+    color: white;
+    aspect-ratio: 1024 / 1004;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    border-radius: 4px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
-    opacity: 0;
-    transition: opacity 0.3s;
 }
 
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
+.grid-item a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.book-snake-icon {
+    background-image: url('images/snake_icons/korsikov_blog_book_snake.webp');
+}
+
+.magic-snake-icon {
+    background-image: url('images/snake_icons/korsikov_blog_magic_snake.webp');
+}
+
+.music-snake-icon {
+    background-image: url('images/snake_icons/korsikov_blog_music_snake.webp');
+}
+
+.grid-item:hover::before {
+    background: rgba(0, 0, 0, 0.7);
 }
 
 /* Responsive Grid */
