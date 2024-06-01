@@ -248,6 +248,10 @@ header, footer {
     background-image: url('images/icons/korsikov_blog_github.webp');
 }
 
+.instagram-icon {
+    background-image: url('images/icons/korsikov_blog_instagram.webp');
+}
+
 .messenger-icon {
     background-image: url('images/icons/korsikov_blog_messenger.webp');
 }
@@ -257,7 +261,7 @@ header, footer {
 }
 
 .email-icon {
-    background-image: url('images/icons/korsikov_blog_email.webp');
+    background-image: url('images/icons/korsikov_blog_mail.webp');
 }
 
 .social-link-item p {
