@@ -499,3 +499,67 @@ section h2 {
 .skills ul li:not(:last-child) {
     margin-right: 5px;
 }
+
+/* Link List Section */
+.link-list-section {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.link-list-section h2 {
+    color: #ffcc00;
+    border-bottom: 1px solid #666666;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+#link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#link-list li {
+    background-color: #1a1a1a;
+    border: 1px solid #666666;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: background-color 0.3s;
+}
+
+#link-list li:hover {
+    background-color: #333333;
+}
+
+#link-list li a {
+    color: #ffcc00;
+    text-decoration: none;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+#link-list li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.link-content {
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+.link-content h3 {
+    margin: 0 0 5px;
+    color: #ffcc00;
+}
+
+.link-content p {
+    margin: 0;
+    color: #b3b3b3;
+}
