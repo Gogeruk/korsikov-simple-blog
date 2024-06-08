@@ -358,6 +358,28 @@ a:hover {
         margin-bottom: 10px;
     }
 
+    .nav-button {
+        display: block;
+        width: auto;
+        text-align: center;
+        padding: 10px;
+        margin: 0 auto 10px auto;
+        transform: skewX(-20deg);
+    }
+
+    .nav-button::before {
+        content: "";
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+
+    .nav-button:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
     /* Social Media */
     .social-media {
         align-items: center;
