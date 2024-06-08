@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use App\Service\MarkdownParserService;
+use App\Service\ReallySimpleSyndicationService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Finder\SplFileInfo;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -13,6 +14,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Finder\Finder;
 use Parsedown;
+use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
 /**
  * Class BlogController
@@ -127,5 +129,39 @@ class BlogController extends AbstractController
         }
 
         return new JsonResponse($posts);
+    }
+
+    #[Route('/rss-blog', name: 'rss_blog_feed', methods: ['GET'])]
+    public function rssBlogFeed(MarkdownParserService $markdownParser, ReallySimpleSyndicationService $rssService): Response
+    {
+        // get all markdown files
+        $markdownDirectory = $this->getParameter('kernel.project_dir') . '/markdown';
+        $finder = new Finder();
+        $finder->files()->in($markdownDirectory)->name('*.md');
+
+        // parse the markdown files
+        $posts = [];
+        foreach ($finder as /** @var SplFileInfo $file */ $file) {
+            $content = file_get_contents($file->getRealPath());
+            $metadata = $markdownParser->parse($content)[0] ?? [];
+
+            $slug = $file->getBasename('.md');
+            $posts[] = [
+                'slug'        => $slug,
+                'title'       => $metadata['title'] ?? ucfirst($slug),
+                'date'        => $metadata['date'] ?? date('Y-m-d'),
+                'link'        => $this->generateUrl('blog_post', ['slug' => $slug], UrlGeneratorInterface::ABSOLUTE_URL),
+                'description' => $metadata['description'] ?? '',
+            ];
+        }
+
+        // generate RSS feed content
+        $rssFeed = $rssService->generateFeed(
+            $posts,
+            $this->generateUrl('blog_page', [], UrlGeneratorInterface::ABSOLUTE_URL)
+        );
+
+        // return RSS feed response
+        return new Response($rssFeed, 200, ['Content-Type' => 'application/rss+xml']);
     }
 }
