@@ -21,3 +21,7 @@ services:
             $rateLimiter: '@limiter.default'
         tags:
             - { name: 'kernel.event_listener', event: 'kernel.request', method: 'onKernelRequest' }
+
+    App\Service\BlogService:
+        arguments:
+            $projectDir: '%kernel.project_dir%'
