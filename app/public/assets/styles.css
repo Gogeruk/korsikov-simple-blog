@@ -187,16 +187,16 @@ a:hover {
     background: rgba(0, 0, 0, 0.7);
 }
 
-.book-snake-icon {
-    background-image: url('images/snake_icons/korsikov_blog_book_snake.webp');
+.book-icon {
+    background-image: url('images/korsikov_blog_book.webp');
 }
 
-.magic-snake-icon {
-    background-image: url('images/snake_icons/korsikov_blog_magic_snake.webp');
+.magic-icon {
+    background-image: url('images/korsikov_blog_fantasy_play.webp');
 }
 
-.music-snake-icon {
-    background-image: url('images/snake_icons/korsikov_blog_music_snake.webp');
+.music-icon {
+    background-image: url('images/korsikov_blog_music.webp');
 }
 
 /* Responsive Grid */
