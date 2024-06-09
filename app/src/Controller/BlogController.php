@@ -131,7 +131,7 @@ class BlogController extends AbstractController
         return new JsonResponse($posts);
     }
 
-    #[Route('/rss-blog', name: 'rss_blog_feed', methods: ['GET'])]
+    #[Route('/feed', name: 'rss_blog_feed', methods: ['GET'])]
     public function rssBlogFeed(MarkdownParserService $markdownParser, ReallySimpleSyndicationService $rssService): Response
     {
         // get all markdown files
