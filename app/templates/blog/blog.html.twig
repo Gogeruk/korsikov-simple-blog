@@ -9,10 +9,10 @@
 {% endblock %}
 
 {% block body %}
-    <div class="container">
+    <div class="blog-container">
         {% if title %}
-            <h1>{{ title }}</h1>
-            <div class="content">
+            <h1 class="blog-title">{{ title }}</h1>
+            <div class="blog-content">
                 {{ content|raw }}
             </div>
         {% else %}
@@ -39,7 +39,9 @@
             </div>
         {% endif %}
 
-        <a href="{{ path('rss_blog_feed') }}" class="nav-button">RSS</a>
+        <a href="{{ path('rss_blog_feed') }}">
+            <div class="rss-icon" style="background-image: url('{{ asset('assets/images/korsikov_blog_rss.webp') }}');"></div>
+        </a>
     </div>
 
     <script>
