@@ -384,6 +384,11 @@ a:hover {
     .social-media {
         align-items: center;
     }
+
+    /* Error */
+    .error-container {
+        padding: 10px;
+    }
 }
 
 /* Posts Section */
@@ -562,4 +567,25 @@ section h2 {
 .link-content p {
     margin: 0;
     color: #b3b3b3;
+}
+
+/* Error Image */
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.error-image-wrapper {
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.error-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }

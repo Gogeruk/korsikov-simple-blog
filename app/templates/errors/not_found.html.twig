@@ -3,8 +3,11 @@
 {% block title %}Page Not Found{% endblock %}
 
 {% block body %}
-    <section class="card">
+    <section class="card error-container">
         <h2>Page Not Found</h2>
+        <div class="error-image-wrapper">
+            <img src="{{ asset('assets/images/korsikov_blog_404_frog.webp') }}" alt="404 Frog" class="error-image">
+        </div>
         <p>Sorry, the page you are looking for could not be found.</p>
     </section>
 {% endblock %}
