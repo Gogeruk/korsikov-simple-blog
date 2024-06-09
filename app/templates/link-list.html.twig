@@ -6,23 +6,16 @@
     <div class="link-list-section">
         <h2>Cool Links</h2>
         <ul id="link-list">
-            <li>
-                <a href="https://www.example.com" target="_blank">
-                    <div class="link-content">
-                        <h3>Example.com</h3>
-                        <p>Just an example website.</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://symfony.com" target="_blank">
-                    <div class="link-content">
-                        <h3>Symfony</h3>
-                        <p>The leading PHP framework for web applications.</p>
-                    </div>
-                </a>
-            </li>
-            <!-- Add more links as needed -->
+            {% for link in links %}
+                <li>
+                    <a href="{{ link.url }}" target="_blank">
+                        <div class="link-content">
+                            <h3>{{ link.title }}</h3>
+                            <p>{{ link.description }}</p>
+                        </div>
+                    </a>
+                </li>
+            {% endfor %}
         </ul>
     </div>
 {% endblock %}

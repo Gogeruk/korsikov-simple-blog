@@ -1,0 +1,3 @@
+- [Example](https://www.example.com) - Just an example website.
+- [Symfony](https://symfony.com) - The leading PHP framework for web applications.
+- [Twig](https://twig.symfony.com) - The flexible, fast, and secure template engine for PHP.

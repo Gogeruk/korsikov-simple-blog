@@ -110,4 +110,46 @@ class BlogService
         $content = file_get_contents($filePath);
         return $this->markdownParser->parse($content);
     }
+
+    /**
+     * Get links from markdown file
+     *
+     * @return array
+     * @throws Exception
+     */
+    public function getLinks(): array
+    {
+        $filePath = $this->markdownDirectory . '/link_list.md';
+
+        if (!file_exists($filePath)) {
+            throw new Exception('The link list file does not exist');
+        }
+
+        $content = file_get_contents($filePath);
+        return $this->parseLinks($content);
+    }
+
+    /**
+     * Parse links from markdown content
+     *
+     * @param string $content
+     * @return array
+     */
+    private function parseLinks(string $content): array
+    {
+        $lines = explode("\n", $content);
+        $links = [];
+
+        foreach ($lines as $line) {
+            if (preg_match('/- \[(.*?)]\((.*?)\) - (.+)/', $line, $matches)) {
+                $links[] = [
+                    'title'       => $matches[1] ?? '',
+                    'url'         => $matches[2] ?? '',
+                    'description' => $matches[3] ?? ''
+                ];
+            }
+        }
+
+        return $links;
+    }
 }
