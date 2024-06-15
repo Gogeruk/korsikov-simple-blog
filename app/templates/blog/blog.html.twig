@@ -9,40 +9,44 @@
 {% endblock %}
 
 {% block body %}
-    <div class="blog-container">
-        {% if title %}
-            <h1 class="blog-title">{{ title }}</h1>
-            <div class="blog-content">
-                {{ content|raw }}
-            </div>
-        {% else %}
-            <div class="filter-section">
-                <h2>Filter by Tag</h2>
-                <ul id="tag-list">
-                    <li><a href="#" data-tag="">all</a></li>
-                    {% for tag in all_tags %}
-                        <li><a href="#" data-tag="{{ tag }}">{{ tag }}</a></li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <div class="posts-section">
-                <h2>Posts</h2>
-                <ul id="post-list">
-                    {% for post in posts %}
-                        <li>
-                            <a href="{{ path('blog_post', {slug: post.slug}) }}">{{ post.title }}</a>
-                        </li>
-                    {% else %}
-                        <li>No posts found.</li>
-                    {% endfor %}
-                </ul>
-            </div>
-        {% endif %}
+    <section class="card">
+        <div class="blog-container">
+            {% if title %}
+                <h1 class="blog-title">{{ title }}</h1>
+                <div class="blog-content">
+                    {{ content|raw }}
+                </div>
+            {% else %}
+                <div class="filter-section">
+                    <h2>Filter by Tag</h2>
+                    <ul id="tag-list">
+                        <li><a href="#" data-tag="">all</a></li>
+                        {% for tag in all_tags %}
+                            <li><a href="#" data-tag="{{ tag }}">{{ tag }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="posts-section">
+                    <h2>Posts</h2>
+                    <ul id="post-list">
+                        {% for post in posts %}
+                            <li>
+                                <a href="{{ path('blog_post', {slug: post.slug}) }}">{{ post.title }}</a>
+                            </li>
+                        {% else %}
+                            <li>No posts found.</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
 
-        <a href="{{ path('rss_blog_feed') }}">
-            <div class="rss-icon" style="background-image: url('{{ asset('assets/images/korsikov_blog_rss.webp') }}');"></div>
-        </a>
-    </div>
+            <a href="{{ path('rss_blog_feed') }}">
+                <div class="rss-icon" style="background-image: url('{{ asset('assets/images/korsikov_blog_rss.webp') }}');"></div>
+            </a>
+        </div>
+
+        <img src="{{ asset('assets/images/korsikov_blog_thinking.webp') }}" alt="Thinking Man Image">
+    </section>
 
     <script>
         const fetchBlogPostsUrl = "{{ path('api_v1_blog_list') }}";

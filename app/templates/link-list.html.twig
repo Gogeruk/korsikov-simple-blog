@@ -3,19 +3,23 @@
 {% block title %}Cool Links - My Arcane Compendium{% endblock %}
 
 {% block body %}
-    <div class="link-list-section">
-        <h2>Cool Links</h2>
-        <ul id="link-list">
-            {% for link in links %}
-                <li>
-                    <a href="{{ link.url }}" target="_blank">
-                        <div class="link-content">
-                            <h3>{{ link.title }}</h3>
-                            <p>{{ link.description }}</p>
-                        </div>
-                    </a>
-                </li>
-            {% endfor %}
-        </ul>
-    </div>
+    <section class="card">
+        <div class="link-list-section">
+            <h2>Cool Links</h2>
+            <ul id="link-list">
+                {% for link in links %}
+                    <li>
+                        <a href="{{ link.url }}" target="_blank">
+                            <div class="link-content">
+                                <h3>{{ link.title }}</h3>
+                                <p>{{ link.description }}</p>
+                            </div>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <img src="{{ asset('assets/images/korsikov_blog_list.webp') }}" alt="Old Scroll Image">
+    </section>
 {% endblock %}
