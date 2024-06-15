@@ -483,30 +483,9 @@ section h2 {
     color: #b3b3b3;
 }
 
-/* Error Image */
-.error-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.error-image-wrapper {
-    width: 100%;
-    max-width: 150px;
-    margin: 0 auto;
-}
-
-.error-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
 /* Card Image Style */
-.card img {
-    max-width: 100%;
+.card-image {
+    width: 66.66%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);

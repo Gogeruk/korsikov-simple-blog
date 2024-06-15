@@ -3,11 +3,10 @@
 {% block title %}Error Page{% endblock %}
 
 {% block body %}
-    <section class="card error-container">
+    <section class="card">
         <h2>Error Page</h2>
-        <div class="error-image-wrapper">
-            <img src="{{ asset('assets/images/korsikov_blog_error_wizz.webp') }}" alt="Error Wizard Image" class="error-image">
-        </div>
         <p>{{ exception.message }}</p>
+
+        <img src="{{ asset('assets/images/korsikov_blog_error_wizz.webp') }}" alt="Error Wizard Image" class="card-image">
     </section>
 {% endblock %}
