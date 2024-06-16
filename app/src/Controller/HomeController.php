@@ -17,6 +17,8 @@ class HomeController extends AbstractController
     #[Route('/', name: 'home_page', methods: ['GET'])]
     public function homePage(): Response
     {
-        return $this->render('home.html.twig');
+        return $this->render('home.html.twig', [
+            'random' => str_pad((string)mt_rand(1, 135), 3, '0', STR_PAD_LEFT),
+        ]);
     }
 }
