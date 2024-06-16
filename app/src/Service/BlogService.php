@@ -40,7 +40,7 @@ class BlogService
     public function getAllMarkdownFiles(): Finder
     {
         $finder = new Finder();
-        return $finder->files()->in($this->markdownDirectory)->name('*.md');
+        return $finder->files()->in($this->markdownDirectory . '/blog')->name('*.md');
     }
 
     /**
@@ -101,7 +101,7 @@ class BlogService
      */
     public function getBlogPost(string $slug): array
     {
-        $filePath = $this->markdownDirectory . '/' . $slug . '.md';
+        $filePath = $this->markdownDirectory . '/blog/' . $slug . '.md';
 
         if (!file_exists($filePath)) {
             throw new Exception('The blog post does not exist');
@@ -119,7 +119,7 @@ class BlogService
      */
     public function getLinks(): array
     {
-        $filePath = $this->markdownDirectory . '/link_list.md';
+        $filePath = $this->markdownDirectory . '/links/link_list.md';
 
         if (!file_exists($filePath)) {
             throw new Exception('The link list file does not exist');
