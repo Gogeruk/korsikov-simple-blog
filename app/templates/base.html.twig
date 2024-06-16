@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to My Arcane Compendium, a blog where you can explore fascinating articles about magic, mysticism, and more.">
-    <meta name="keywords" content="magic, mysticism, blog, arcane, compendium">
-    <meta name="author" content="Your Name">
-    <title>{% block title %}Welcome to My Arcane Compendium{% endblock %}</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Mykyta's Website - Personal Blog on Tech, Occult, Esoteric, Fantasy, and More">
+    <meta name="description" content="Mykyta Korsikov's personal blog covering topics like tech, occult, esoteric, fantasy, mythology, web development, internet privacy, cyber-security, religion, mysticism, magic, philosophy, and paganism.">
+    <meta name="keywords" content="tech, occult, esoteric, fantasy, mythology, web development, internet privacy, cyber-security, religion, mysticism, magic, personal blog, philosophy, pagan, paganism">
+    <meta name="author" content="Mykyta Korsikov">
+
+    <title>{% block title %}Mykyta's Website{% endblock %}</title>
+
+    <!-- Background -->
     <link rel="icon" href="{{ asset('assets/images/korsikov_blog_snake.webp') }}">
+
+    <!-- Fonts -->
     <link rel="stylesheet" href="{{ asset('assets/fonts/MedievalSharp.woff2') }}">
+
+    <!-- Stylesheets -->
     {% block stylesheets %}
         <link rel="stylesheet" href="{{ asset('assets/styles.css') }}">
     {% endblock %}
@@ -20,13 +30,13 @@
             <img src="{{ asset('assets/images/korsikov_blog_avatar.webp') }}" alt="Avatar" class="avatar">
         </a>
     </div>
-    <h1 class="header-title">Welcome to My Arcane Compendium</h1>
+    <h1 class="header-title">Mykyta's Website</h1>
     <nav class="navigation">
         <ul>
             <li><a href="{{ path('home_page') }}" class="nav-button">Home</a></li>
             <li><a href="{{ path('blog_page') }}" class="nav-button">Blog</a></li>
-            <li><a href="{{ path('contact_page') }}" class="nav-button">Contact</a></li>
             <li><a href="{{ path('link_list_page') }}" class="nav-button">Link List</a></li>
+            <li><a href="{{ path('contact_page') }}" class="nav-button">Contact</a></li>
             <li><a href="{{ path('cv_page') }}" class="nav-button">CV</a></li>
         </ul>
     </nav>
@@ -38,9 +48,9 @@
 
 <footer class="footer">
     <div class="container">
-        <p>&copy; {{ "now"|date("Y") }} My Arcane Compendium. All rights reserved.</p>
-        <p>Email: <a href="mailto:contact@yourdomain.com">contact@yourdomain.com ✨</a></p>
-        <p><a href="{{ path('about_page') }}">About Us</a> | <a href="{{ path('privacy_policy_page') }}">Privacy Policy</a></p>
+        <p>&copy; {{ "now"|date("Y") }} Mykyta's Website. All rights reserved.</p>
+        <p>Email: <a href="mailto:korsikov.blog.temp.glitter807@passmail.net">korsikov.blog.temp.glitter807@passmail.net ✨</a></p>
+        <p><a href="{{ path('about_page') }}">About</a> | <a href="{{ path('privacy_policy_page') }}">Privacy Policy</a></p>
         <p><a href="https://github.com/Gogeruk/korsikov-simple-blog">Code on GitHub</a></p>
         <p><a href="http://localhost:8080">http://localhost:8080</a></p>
     </div>
