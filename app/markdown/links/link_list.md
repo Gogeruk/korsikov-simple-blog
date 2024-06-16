@@ -10,19 +10,16 @@
 - [Erutan](https://www.erutanmusic.com) - A lovely and charming singer/songwriter.
 - [Dig Deeper](https://digdeeper.club) - Somewhat schizophrenic, yet interesting blog about internet privacy.
 - [Clamavi De Profundis](https://youtube.com/@ClamaviDeProfundis) - Folk/fantasy music band.
-- [Chris Titus](https://christitus.com) - Linux tech influencer I like.
 - [Eric Murphy](https://ericmurphy.xyz) - Privacy/web-dev tech influencer I like.
 - [Louis Rossmann](https://rossmanngroup.com) - Tech freedom fighter I like.
 - [Duane Decker](https://www.duanedecker.com) - Rise of Nations OST creator.
 - [Pilgrims Pass](https://youtube.com/@PilgrimsPass/videos) - In my opinion, this influencer is thought-provoking and has a ton of unique ideas, but see for yourself I guess...
 - [Isiopolis](https://isiopolis.com) - A website dedicated to the goddess Isis. It's not overly intellectual in my personal opinion, but it is fun.
 - [Patrick Boyle](https://youtube.com/@PBoyle) - A famous SoundCloud rapper! Wait... No??? Economy?
-- [Matthew Ström](https://matthewstrom.com) - I find this blog about design exceptionally enjoyable.
+- [Matthew Ström](https://matthewstrom.com) - I find this blog about design "exceptionally" enjoyable.
 - [Mr. Mythos](https://youtube.com/@MrMythos) - Well-researched esoteric and conspiracy content.
 - [Metatron](https://youtube.com/@metatronyt) - This dude creates highly entertaining historical content.
 - [Bardify](https://youtube.com/@bardify) - A really good soundscape fantasy music channel.
-- [The Ashspawn](https://m.youtube.com/@theashspawn) - Relaxing and immersive fantasy lore videos.
-- [Nine Tail](https://www.ninetail.org/manifest.html) - Cool images I found on an obscure D&D website.
 - [The Global Consciousness Project](https://global-mind.org/gcpdot) - An absolutely fascinating project! Or glorified random number generator, depending on your perspective.
 - [Temple of Ascending Flame](http://ascendingflame.com) - An esoteric occult website with some fun books.
 - [Theoi Project](https://www.theoi.com) - Greek mythology.
@@ -36,3 +33,4 @@
 - [s0ulafein](https://www.deviantart.com/s0ulafein) - I love this art style.
 - [iTODDLERS-BTFO](https://github.com/iTODDLERS-BTFO/iToddlers-BTFO) - Some valid criticism of Apple.
 - [Bruva Alfabusa](https://youtube.com/@alfabusa) - An indie group of YouTube animators.
+- [Andrew Schmelyun](https://m.youtube.com/@aschmelyun) - A web-dev tech influencer I like.
