@@ -1,3 +1,38 @@
-- [Example](https://www.example.com) - Just an example website.
-- [Symfony](https://symfony.com) - The leading PHP framework for web applications.
-- [Twig](https://twig.symfony.com) - The flexible, fast, and secure template engine for PHP.
+- [Mind Matters](https://mindmatters.ai) - The website I like for its insights on psychology and philosophy.
+- [Adrian von Ziegler](https://adrianvonziegler.bandcamp.com) - Celtic music composer that I absolutely adore.
+- [Tedium](https://tedium.co) - I have no idea what this site is about. I like it a lot, but... I find it embarrassing that I enjoy this type of content.
+- [SearXNG](https://searx.space) - SearXNG is a meta search engine. Probably the best alternative to Google out there.
+- [Esoterica](http://justinsledge.com) - This influencer is absolutely amazing when it comes to esoteric content.
+- [Survive the Jive](https://survivethejive.blogspot.com) - One of the top influencers who discusses pagan philosophy and history.
+- [Fortress of Lugh](https://www.fortressoflugh.com) - Mythology and history influencer with a nice voice.
+- [Mili](https://projectmili.com) - A really cool indie band based in Japan.
+- [The Modern Hermeticist](https://themodernhermeticist.com) - This influencer has a good YouTube channel about esoteric philosophy.
+- [Erutan](https://www.erutanmusic.com) - A lovely and charming singer/songwriter.
+- [Dig Deeper](https://digdeeper.club) - Somewhat schizophrenic, yet interesting blog about internet privacy.
+- [Clamavi De Profundis](https://youtube.com/@ClamaviDeProfundis) - Folk/fantasy music band.
+- [Chris Titus](https://christitus.com) - Linux tech influencer I like.
+- [Eric Murphy](https://ericmurphy.xyz) - Privacy/web-dev tech influencer I like.
+- [Louis Rossmann](https://rossmanngroup.com) - Tech freedom fighter I like.
+- [Duane Decker](https://www.duanedecker.com) - Rise of Nations OST creator.
+- [Pilgrims Pass](https://youtube.com/@PilgrimsPass/videos) - In my opinion, this influencer is thought-provoking and has a ton of unique ideas, but see for yourself I guess...
+- [Isiopolis](https://isiopolis.com) - A website dedicated to the goddess Isis. It's not overly intellectual in my personal opinion, but it is fun.
+- [Patrick Boyle](https://youtube.com/@PBoyle) - A famous SoundCloud rapper! Wait... No??? Economy?
+- [Matthew Ström](https://matthewstrom.com) - I find this blog about design exceptionally enjoyable.
+- [Mr. Mythos](https://youtube.com/@MrMythos) - Well-researched esoteric and conspiracy content.
+- [Metatron](https://youtube.com/@metatronyt) - This dude creates highly entertaining historical content.
+- [Bardify](https://youtube.com/@bardify) - A really good soundscape fantasy music channel.
+- [The Ashspawn](https://m.youtube.com/@theashspawn) - Relaxing and immersive fantasy lore videos.
+- [Nine Tail](https://www.ninetail.org/manifest.html) - Cool images I found on an obscure D&D website.
+- [The Global Consciousness Project](https://global-mind.org/gcpdot) - An absolutely fascinating project! Or glorified random number generator, depending on your perspective.
+- [Temple of Ascending Flame](http://ascendingflame.com) - An esoteric occult website with some fun books.
+- [Theoi Project](https://www.theoi.com) - Greek mythology.
+- [Cool ASCII](https://smartwebworker.com/144-cool-ascii-symbols-for-fun) - Some cool ASCII symbols.
+- [Erischan](https://erischan.org) - An image board dedicated to the goddess Eris and Discordianism.
+- [Internet Sacred Text Archive](https://sacred-texts.com) - An internet archive of esoteric books and articles.
+- [DKMU Library](https://dkmu.org/texts.html) - A decent collection of chaos magic books.
+- [/g/'s based sites](https://based.coom.tech) - A useful link list.
+- [Desuarchive](https://desuarchive.org/g/) - A very useful archive of /g/ posts.
+- [Kemono](https://kemono.su) - Leaked Patreon posts.
+- [s0ulafein](https://www.deviantart.com/s0ulafein) - I love this art style.
+- [iTODDLERS-BTFO](https://github.com/iTODDLERS-BTFO/iToddlers-BTFO) - Some valid criticism of Apple.
+- [Bruva Alfabusa](https://youtube.com/@alfabusa) - An indie group of YouTube animators.
