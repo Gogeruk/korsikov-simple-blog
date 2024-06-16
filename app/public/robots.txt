@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /_error/
+Disallow: /about
+Disallow: /contact
+
+Allow: /
+Allow: /blog
+Allow: /blog/{slug}
+Allow: /api/v1/blog
+Allow: /feed
+Allow: /link-list
+Allow: /privacy-policy
+Allow: /cv
