@@ -526,6 +526,14 @@ section h2 {
     margin-bottom: 20px;
 }
 
+.centered-text {
+    text-align: center;
+}
+
+.left-text {
+    text-align: left;
+}
+
 .blog-content {
     color: #b3b3b3;
     font-size: 1.1em;
