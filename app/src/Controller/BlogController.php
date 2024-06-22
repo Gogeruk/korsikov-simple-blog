@@ -34,7 +34,6 @@ class BlogController extends AbstractController
             'title'       => null,
             'content'     => null,
             'tags'        => [],
-            'random'      => str_pad((string)mt_rand(1, 135), 3, '0', STR_PAD_LEFT),
         ]);
     }
 
@@ -56,7 +55,6 @@ class BlogController extends AbstractController
             'posts'       => null,
             'all_tags'    => null,
             'current_tag' => null,
-            'random'      => str_pad((string)mt_rand(1, 135), 3, '0', STR_PAD_LEFT),
         ]);
     }
 
