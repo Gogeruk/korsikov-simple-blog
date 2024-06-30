@@ -22,9 +22,9 @@ class ReallySimpleSyndicationService
         $rssFeed = '<?xml version="1.0" encoding="UTF-8" ?>';
         $rssFeed .= '<rss version="2.0">';
         $rssFeed .= '<channel>';
-        $rssFeed .= '<title>Mykyta's Website</title>';
+        $rssFeed .= '<title>Mykyta\'s Website</title>';
         $rssFeed .= '<link>' . $link . '</link>';
-        $rssFeed .= '<description>Mykyta Korsikov's personal blog covering topics like tech, occult, esoteric, fantasy, mythology, web development, internet privacy, cyber-security, religion, mysticism, magic, philosophy, and paganism.</description>';
+        $rssFeed .= '<description>Mykyta Korsikov\'s personal blog covering topics like tech, occult, esoteric, fantasy, mythology, web development, internet privacy, cyber-security, religion, mysticism, magic, philosophy, and paganism.</description>';
 
         foreach ($posts as $post) {
             $rssFeed .= '<item>';
