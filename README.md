@@ -57,5 +57,10 @@ chmod -R 775 var
 php bin/console cache:warmup --env=prod
 ```
 
-### 10. Access the Website
+### 10. Delete it again! MUHAHAHAHA!
+```bash
+rm -r var/cache/*
+```
+
+### 11. Access the Website
 [http://localhost:8080/](http://localhost:8080/)
