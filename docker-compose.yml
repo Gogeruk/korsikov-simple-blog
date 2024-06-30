@@ -1,6 +1,7 @@
 version: '3.7'
 
 services:
+
   php-blog:
     container_name: php-blog
     build:
@@ -24,7 +25,7 @@ services:
     volumes:
       - ./app:/var/www/project
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
-      - ./nginx/ssl:/etc/nginx/ssl
+      - ~/nginx/ssl:/etc/nginx/ssl
     depends_on:
       - php-blog
     networks:
