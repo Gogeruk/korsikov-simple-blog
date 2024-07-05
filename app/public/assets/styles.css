@@ -343,7 +343,7 @@ a:hover {
 }
 
 .header .title {
-    font-size: 1.5em;
+    font-size: 1.1em;
     color: #ffcc00;
 }
 
@@ -426,7 +426,7 @@ section h2 {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    text-align: left;
+    text-align: center;
 }
 
 .link-list-section h2 {
@@ -632,7 +632,7 @@ section h2 {
 
     /* Header Title */
     .header-title {
-        font-size: 2em;
+        font-size: 1.1em;
     }
 
     /* Navigation */
@@ -670,11 +670,70 @@ section h2 {
 
     /* Social Media */
     .social-media {
+        flex-direction: column;
         align-items: center;
+    }
+
+    .social-link-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-link-item a {
+        display: inline-block;
+        width: auto;
+        font-size: 0.7em;
+        padding: 5px 10px;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 4px;
+        margin-bottom: 5px;
+    }
+
+    .social-link-item a:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .social-icon {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        margin-bottom: 5px;
     }
 
     /* Blog Title */
     .blog-title {
-        font-size: 2em;
+        font-size: 1.1em;
+    }
+
+    /* Contact Section */
+    .card-image {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 20px;
+        font-size: 0.7em;
+    }
+
+    /* CV */
+    .cv-body {
+        padding: 15px;
+        font-size: 0.6em;
+    }
+
+    .experience {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .education {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
     }
 }
