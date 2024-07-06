@@ -15,10 +15,10 @@
     </header>
 
     <section class="contact-info">
-        <p>Email: <a href="mailto:mykyta.korsikov.work@protonmail.com">mykyta.korsikov.work@protonmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/mykyta-korsikov-375208212" target="_blank">linkedin.com/in/mykyta-korsikov-375208212</a></p>
-        <p>GitHub: <a href="https://github.com/Gogeruk" target="_blank">github.com/Gogeruk</a></p>
-        <p>Telegram: <a href="https://t.me/Gogeruk" target="_blank">t.me/Gogeruk</a></p>
+        <p>Email: <a href="mailto:{{ getEnv('work_email') }}">{{ getEnv('work_email') }}</a></p>
+        <p>GitHub: <a href="{{ getEnv('github_url') }}" target="_blank">github.com/Gogeruk</a></p>
+        <p>Messenger: <a href="{{ getEnv('messenger_url') }}" target="_blank">m.me/korsikov.mykyta</a></p>
+        <p>LinkedIn: <a href="{{ getEnv('linkedin_url') }}" target="_blank">linkedin.com/in/mykyta-korsikov</a></p>
         <p>Location: Odessa, Ukraine</p>
     </section>
 

@@ -12,24 +12,24 @@
         <h2>Contact Me</h2>
         <div class="social-media">
             <div class="social-link-item">
-                <a href="mailto:korsikov.blog.temp.glitter807@passmail.net" class="social-icon email-icon"></a>
-                <p><a href="mailto:korsikov.blog.temp.glitter807@passmail.net">korsikov.blog.temp.glitter807@passmail.net ✨</a></p>
+                <a href="mailto:{{ getEnv('blog_email') }}" class="social-icon email-icon"></a>
+                <p><a href="mailto:{{ getEnv('blog_email') }}">{{ getEnv('blog_email') }} ✨</a></p>
             </div>
             <div class="social-link-item">
-                <a href="https://www.linkedin.com/in/mykyta-korsikov-375208212" target="_blank" class="social-icon linkedin-icon"></a>
-                <p><a href="https://www.linkedin.com/in/mykyta-korsikov-375208212" target="_blank">https://www.linkedin.com/in/mykyta-korsikov-375208212 ✨</a></p>
+                <a href="{{ getEnv('linkedin_url') }}" target="_blank" class="social-icon linkedin-icon"></a>
+                <p><a href="{{ getEnv('linkedin_url') }}" target="_blank">{{ getEnv('linkedin_url') }} ✨</a></p>
             </div>
             <div class="social-link-item">
-                <a href="https://github.com/Gogeruk" target="_blank" class="social-icon github-icon"></a>
-                <p><a href="https://github.com/Gogeruk" target="_blank">https://github.com/Gogeruk ✨</a></p>
+                <a href="{{ getEnv('github_url') }}" target="_blank" class="social-icon github-icon"></a>
+                <p><a href="{{ getEnv('github_url') }}" target="_blank">{{ getEnv('github_url') }} ✨</a></p>
             </div>
             <div class="social-link-item">
-                <a href="https://www.instagram.com/gogeruk" target="_blank" class="social-icon instagram-icon"></a>
-                <p><a href="https://www.instagram.com/gogeruk" target="_blank">https://www.instagram.com/gogeruk ✨</a></p>
+                <a href="{{ getEnv('instagram_url') }}" target="_blank" class="social-icon instagram-icon"></a>
+                <p><a href="{{ getEnv('instagram_url') }}" target="_blank">{{ getEnv('instagram_url') }} ✨</a></p>
             </div>
             <div class="social-link-item">
-                <a href="https://m.me/korsikov.mykyta" target="_blank" class="social-icon messenger-icon"></a>
-                <p><a href="https://m.me/korsikov.mykyta" target="_blank">https://m.me/korsikov.mykyta ✨</a></p>
+                <a href="{{ getEnv('messenger_url') }}" target="_blank" class="social-icon messenger-icon"></a>
+                <p><a href="{{ getEnv('messenger_url') }}" target="_blank">{{ getEnv('messenger_url') }} ✨</a></p>
             </div>
         </div>
 

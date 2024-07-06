@@ -1,3 +1,13 @@
+parameters:
+    domain_name: '%env(DOMAIN_NAME)%'
+    domain_url: '%env(DOMAIN_URL)%'
+    blog_email: '%env(BLOG_EMAIL)%'
+    work_email: '%env(WORK_EMAIL)%'
+    linkedin_url: '%env(LINKEDIN_URL)%'
+    github_url: '%env(GITHUB_URL)%'
+    instagram_url: '%env(INSTAGRAM_URL)%'
+    messenger_url: '%env(MESSENGER_URL)%'
+
 services:
     _defaults:
         autowire: true
@@ -25,3 +35,6 @@ services:
     App\Service\BlogService:
         arguments:
             $projectDir: '%kernel.project_dir%'
+
+    App\Twig\EnvTwigExtension:
+        tags: [ 'twig.extension' ]

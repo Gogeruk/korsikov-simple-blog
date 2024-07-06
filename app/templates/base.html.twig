@@ -28,27 +28,27 @@
     <meta property="og:site_name" content="Mykyta's Website">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://korsikov.com">
+    <meta property="og:url" content="{{ getEnv('domain_url') }}">
     <meta property="og:title" content="Mykyta's Website - Personal Blog on Tech, Occult, Esoteric, Fantasy, and More">
     <meta property="og:description" content="Mykyta Korsikov's personal blog covering topics like tech, occult, esoteric, fantasy, mythology, web development, internet privacy, cyber-security, religion, mysticism, magic, philosophy, and paganism.">
-    <meta property="og:image" content="https://korsikov.com/assets/images/korsikov_blog_avatar.webp">
+    <meta property="og:image" content="{{ getEnv('domain_url') }}/assets/images/korsikov_blog_avatar.webp">
     <meta property="og:image:width" content="630">
     <meta property="og:image:height" content="630">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://korsikov.com">
+    <meta name="twitter:url" content="{{ getEnv('domain_url') }}">
     <meta name="twitter:title" content="Mykyta's Website - Personal Blog on Tech, Occult, Esoteric, Fantasy, and More">
     <meta name="twitter:description" content="Mykyta Korsikov's personal blog covering topics like tech, occult, esoteric, fantasy, mythology, web development, internet privacy, cyber-security, religion, mysticism, magic, philosophy, and paganism.">
-    <meta name="twitter:image" content="https://korsikov.com/assets/images/korsikov_blog_avatar.webp">
+    <meta name="twitter:image" content="{{ getEnv('domain_url') }}/assets/images/korsikov_blog_avatar.webp">
     <meta name="twitter:image:alt" content="Mykyta Korsikov's Blog Avatar">
 
     <!-- LinkedIn -->
     <meta property="og:type" content="article">
     <meta property="og:title" content="Mykyta's Website - Personal Blog on Tech, Occult, Esoteric, Fantasy, and More">
     <meta property="og:description" content="Mykyta Korsikov's personal blog covering topics like tech, occult, esoteric, fantasy, mythology, web development, internet privacy, cyber-security, religion, mysticism, magic, philosophy, and paganism.">
-    <meta property="og:image" content="https://korsikov.com/assets/images/korsikov_blog_avatar.webp">
-    <meta property="og:url" content="https://korsikov.com">
+    <meta property="og:image" content="{{ getEnv('domain_url') }}/assets/images/korsikov_blog_avatar.webp">
+    <meta property="og:url" content="{{ getEnv('domain_url') }}">
     <meta property="og:site_name" content="Mykyta's Website">
 
     <!-- Favicon -->
@@ -101,10 +101,10 @@
 <footer class="footer">
     <div class="container">
         <p>&copy; {{ "now"|date("Y") }} Mykyta's Website. All rights reserved.</p>
-        <p>Email: <a href="mailto:korsikov.blog.temp.glitter807@passmail.net">korsikov.blog.temp.glitter807@passmail.net ✨</a></p>
+        <p>Email: <a href="mailto:{{ getEnv('blog_email') }}">{{ getEnv('blog_email') }} ✨</a></p>
         <p><a href="{{ path('about_page') }}">About</a> | <a href="{{ path('privacy_policy_page') }}">Privacy Policy</a></p>
-        <p><a href="https://github.com/Gogeruk/korsikov-simple-blog">Code on GitHub</a></p>
-        <p><a href="https://korsikov.com">https://korsikov.com</a></p>
+        <p><a href="{{ getEnv('github_url') }}/korsikov-simple-blog">Code on GitHub</a></p>
+        <p><a href="{{ getEnv('domain_url') }}">{{ getEnv('domain_url') }}</a></p>
     </div>
 </footer>
 
