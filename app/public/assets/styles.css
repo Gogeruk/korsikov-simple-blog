@@ -422,11 +422,12 @@ section h2 {
     margin-right: 5px;
 }
 
-/* Link List Section */
+/* Link List */
 .link-list-section {
     background-color: #0a0a0a;
     color: #ffffff;
     padding: 20px;
+    border: 1px solid #666666;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
