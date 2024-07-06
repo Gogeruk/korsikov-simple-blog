@@ -1,5 +1,7 @@
 # My Simple Blog Website
 
+If evetything is good, it should be running at [https://korsikov.com](https://korsikov.com)
+
 I created this blog website for several reasons:
 
 1. **Freedom of Expression**: I got tired of moderation on various forums, image boards, and obscure Discord servers. I simply wanted a place where I can do whatever I want whenever I want.
@@ -64,3 +66,96 @@ rm -r var/cache/*
 
 ### 11. Access the Website
 [http://localhost:8080/](http://localhost:8080/)
+
+
+# For dev environment #
+docker-compose.yml
+```
+version: '3.7'
+
+services:
+
+  php-blog:
+    container_name: php-blog
+    build:
+      context: ./php
+    ports:
+      - '9001:9000'
+    volumes:
+      - ./app:/var/www/project
+      - ./php/php.ini:/usr/local/etc/php/php.ini
+      - ./php/conf.d/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+      - ./php/conf.d/error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini
+    networks:
+      - app-network
+
+  nginx-blog:
+    container_name: nginx-blog
+    image: nginx:stable-alpine
+    ports:
+      - '8080:80'
+    volumes:
+      - ./app:/var/www/project
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php-blog
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+```
+and this is the default.conf file
+```
+server {
+    listen 80;
+    server_name localhost;
+    root /var/www/project/public;
+
+    index index.php index.html;
+
+    error_log /var/log/nginx/project_error.log;
+    access_log /var/log/nginx/project_access.log;
+
+    client_body_timeout 600s;
+    client_header_timeout 600s;
+    client_max_body_size 10M;
+    client_body_buffer_size 10M;
+    large_client_header_buffers 4 16k;
+
+    location / {
+        try_files $uri /index.php$is_args$args;
+    }
+
+    location ~ ^/index\.php(/|$) {
+        include fastcgi_params;
+        fastcgi_pass php-blog:9000;
+        fastcgi_split_path_info ^(.+\.php)(/.*)$;
+        fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
+        fastcgi_param DOCUMENT_ROOT $realpath_root;
+        internal;
+
+        fastcgi_buffer_size 128k;
+        fastcgi_buffers 4 256k;
+        fastcgi_busy_buffers_size 256k;
+    }
+
+    location ~ \.php$ {
+        try_files $uri =404;
+        include fastcgi_params;
+        fastcgi_pass php-blog:9000;
+        fastcgi_split_path_info ^(.+\.php)(/.*)$;
+        fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
+        fastcgi_param DOCUMENT_ROOT $realpath_root;
+
+        fastcgi_buffer_size 128k;
+        fastcgi_buffers 4 256k;
+        fastcgi_busy_buffers_size 256k;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
+```
