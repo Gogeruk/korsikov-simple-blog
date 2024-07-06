@@ -324,9 +324,12 @@ a:hover {
 
 /* CV */
 .cv-body {
-    background-color: #ffffff;
-    color: #0a0a0a;
+    color: #ffffff;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/korsikov_blog_CV_backimg.webp'), radial-gradient(circle, #1a1a1a 10%, #0a0a0a 90%);
+    background-blend-mode: overlay;
 }
 
 .header {
@@ -720,7 +723,7 @@ section h2 {
     /* CV */
     .cv-body {
         padding: 15px;
-        font-size: 0.6em;
+        font-size: 0.5em;
     }
 
     .experience {
