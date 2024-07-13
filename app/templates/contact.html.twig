@@ -6,33 +6,34 @@
     <section class="card">
         <h2>Contact Information</h2>
         <p>I avoid social media as much as possible and get most of my information from my RSS aggregators. If you need to reach me, the best way is to email me.</p>
-    </section>
-
-    <section class="card">
-        <h2>Contact Me</h2>
-        <div class="social-media">
-            <div class="social-link-item">
-                <a href="mailto:{{ getEnv('blog_email') }}" class="social-icon email-icon"></a>
-                <p><a href="mailto:{{ getEnv('blog_email') }}">{{ getEnv('blog_email') }} ✨</a></p>
-            </div>
-            <div class="social-link-item">
-                <a href="{{ getEnv('linkedin_url') }}" target="_blank" class="social-icon linkedin-icon"></a>
-                <p><a href="{{ getEnv('linkedin_url') }}" target="_blank">{{ getEnv('linkedin_url') }} ✨</a></p>
-            </div>
-            <div class="social-link-item">
-                <a href="{{ getEnv('github_url') }}" target="_blank" class="social-icon github-icon"></a>
-                <p><a href="{{ getEnv('github_url') }}" target="_blank">{{ getEnv('github_url') }} ✨</a></p>
-            </div>
-            <div class="social-link-item">
-                <a href="{{ getEnv('instagram_url') }}" target="_blank" class="social-icon instagram-icon"></a>
-                <p><a href="{{ getEnv('instagram_url') }}" target="_blank">{{ getEnv('instagram_url') }} ✨</a></p>
-            </div>
-            <div class="social-link-item">
-                <a href="{{ getEnv('messenger_url') }}" target="_blank" class="social-icon messenger-icon"></a>
-                <p><a href="{{ getEnv('messenger_url') }}" target="_blank">{{ getEnv('messenger_url') }} ✨</a></p>
-            </div>
-        </div>
 
         <img src="{{ asset('assets/images/korsikov_blog_social.webp') }}" alt="Earth Web Image" class="card-image">
+    </section>
+    <section class="grid-container">
+        <div class="grid-item email-icon">
+            <a href="mailto:{{ getEnv('blog_email') }}" target="_blank">
+                <h3>Email</h3>
+            </a>
+        </div>
+        <div class="grid-item linkedin-icon">
+            <a href="{{ getEnv('linkedin_url') }}" target="_blank">
+                <h3>LinkedIn</h3>
+            </a>
+        </div>
+        <div class="grid-item github-icon">
+            <a href="{{ getEnv('github_url') }}" target="_blank">
+                <h3>GitHub</h3>
+            </a>
+        </div>
+        <div class="grid-item instagram-icon">
+            <a href="{{ getEnv('instagram_url') }}" target="_blank">
+                <h3>Instagram</h3>
+            </a>
+        </div>
+        <div class="grid-item messenger-icon">
+            <a href="{{ getEnv('messenger_url') }}" target="_blank">
+                <h3>Messenger</h3>
+            </a>
+        </div>
     </section>
 {% endblock %}

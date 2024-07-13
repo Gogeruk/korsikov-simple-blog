@@ -144,6 +144,9 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
+    justify-content: center;
+    align-content: center;
+    margin: 20px 0;
 }
 
 .grid-item {
@@ -187,18 +190,6 @@ a:hover {
     background: rgba(0, 0, 0, 0.7);
 }
 
-.book-icon {
-    background-image: url('images/korsikov_blog_book.webp');
-}
-
-.magic-icon {
-    background-image: url('images/korsikov_blog_fantasy_play.webp');
-}
-
-.music-icon {
-    background-image: url('images/korsikov_blog_music.webp');
-}
-
 /* Responsive Grid */
 @media (min-width: 768px) {
     .grid-container {
@@ -212,32 +203,17 @@ a:hover {
     }
 }
 
-/* Social Media */
-.social-media {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 20px;
+/* Icons */
+.book-icon {
+    background-image: url('images/korsikov_blog_book.webp');
 }
 
-.social-link-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+.magic-icon {
+    background-image: url('images/korsikov_blog_fantasy_play.webp');
 }
 
-.social-icon {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    background-size: cover;
-    background-position: center;
-    margin-right: 10px;
-    transition: transform 0.3s;
-}
-
-.social-icon:hover {
-    transform: scale(1.1);
+.music-icon {
+    background-image: url('images/korsikov_blog_music.webp');
 }
 
 .github-icon {
@@ -258,15 +234,6 @@ a:hover {
 
 .email-icon {
     background-image: url('images/icons/korsikov_blog_mail.webp');
-}
-
-.social-link-item p {
-    margin: 0;
-    font-size: 1em;
-}
-
-.social-link-item a {
-    font-weight: bold;
 }
 
 /* Avatar */
@@ -670,39 +637,6 @@ section h2 {
 
     .nav-button:hover {
         background-color: rgba(255, 255, 255, 0.3);
-    }
-
-    /* Social Media */
-    .social-media {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .social-link-item {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .social-link-item a {
-        display: inline-block;
-        width: auto;
-        font-size: 0.7em;
-        padding: 5px 10px;
-        background-color: rgba(0, 0, 0, 0.6);
-        border-radius: 4px;
-        margin-bottom: 5px;
-    }
-
-    .social-link-item a:hover {
-        background-color: rgba(255, 255, 255, 0.3);
-    }
-
-    .social-icon {
-        width: 10px;
-        height: 10px;
-        display: inline-block;
-        margin-bottom: 5px;
     }
 
     /* Blog Title */
