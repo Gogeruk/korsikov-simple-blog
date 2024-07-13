@@ -110,6 +110,11 @@ a:hover {
     border-bottom: 2px solid #800020;
 }
 
+.card a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
 /* Button */
 .button {
     background-color: #ffcc00;
@@ -390,23 +395,6 @@ section h2 {
 }
 
 /* Link List */
-.link-list-section {
-    background-color: #0a0a0a;
-    color: #ffffff;
-    padding: 20px;
-    border: 1px solid #666666;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    text-align: center;
-}
-
-.link-list-section h2 {
-    color: #ffcc00;
-    border-bottom: 1px solid #666666;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-}
-
 #link-list {
     list-style: none;
     padding: 0;
@@ -482,12 +470,20 @@ section h2 {
 
 /* Blog */
 .blog-container {
+    background-color: #0a0a0a;
+    color: #ffffff;
     padding: 20px;
-    background-color: rgba(10, 10, 10, 0.9);
     border: 1px solid #666666;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    color: #ffffff;
+    text-align: center;
+}
+
+.blog-container h2 {
+    color: #ffcc00;
+    border-bottom: 1px solid #666666;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .blog-title {
