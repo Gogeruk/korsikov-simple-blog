@@ -8,6 +8,10 @@ parameters:
     instagram_url: '%env(INSTAGRAM_URL)%'
     messenger_url: '%env(MESSENGER_URL)%'
 
+    music_url: '%env(MUSIC_URL)%'
+    book_url: '%env(BOOK_URL)%'
+    game_url: '%env(GAME_URL)%'
+
 services:
     _defaults:
         autowire: true
