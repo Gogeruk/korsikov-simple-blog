@@ -34,3 +34,6 @@
 - [iTODDLERS-BTFO](https://github.com/iTODDLERS-BTFO/iToddlers-BTFO) - Some valid criticism of Apple.
 - [Bruva Alfabusa](https://youtube.com/@alfabusa) - An indie group of YouTube animators.
 - [Andrew Schmelyun](https://m.youtube.com/@aschmelyun) - A web-dev tech influencer I like.
+- [AI Dungeon](https://play.aidungeon.com) - "AI Dungeon" is a text-based adventure game powered by LLMs. I encourage everyone to at least try it.
+- [Hero Forge](https://www.heroforge.com) - Hero Forge is a cool webapp that allows you to create and customize 3D-printed tabletop miniatures.
+- [Wiby](https://wiby.org) - Wiby is a search engine that indexes old-school, static, single-person-curated websites reminiscent of the early internet, made by hobbyists and enthusiasts.
