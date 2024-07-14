@@ -333,26 +333,26 @@ a:hover {
 .skills ul {
     margin: 0;
     padding: 0;
-    color: #666666;
+    color: #cccccc;
 }
 
 .profile p, .experience p, .education p {
     margin: 0;
     padding: 0;
-    color: #666666;
+    color: #cccccc;
     text-align: left;
 }
 
 .contact-info p {
     margin: 10px 0;
     padding: 0;
-    color: #666666;
+    color: #cccccc;
     text-align: center;
 }
 
 .institution {
-    padding-left: 20px;
-    text-indent: 20px;
+    padding-left: 15px;
+    text-indent: 15px;
 }
 
 .contact-info a {
@@ -372,7 +372,7 @@ section {
 
 section h2 {
     color: #D3D3D3;
-    border-bottom: 2px solid #666666;
+    border-bottom: 2px solid #cccccc;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
@@ -392,7 +392,7 @@ section h2 {
 .job ul {
     list-style: disc;
     padding-left: 20px;
-    color: #666666;
+    color: #cccccc;
     text-align: left;
 }
 
@@ -679,20 +679,39 @@ section h2 {
     /* CV */
     .cv-body {
         padding: 15px;
-        font-size: 0.3em;
+    }
+
+    .header {
+        font-size: 0.6em;
+    }
+
+    .profile {
+        padding: 10px;
+        margin-bottom: 15px;
+        font-size: 0.4em;
+    }
+
+    .skills {
+        padding: 10px;
+        margin-bottom: 15px;
+        font-size: 0.4em;
     }
 
     .experience {
         padding: 10px;
         margin-bottom: 15px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
+        font-size: 0.4em;
     }
 
     .education {
         padding: 10px;
         margin-bottom: 15px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
+        font-size: 0.4em;
+    }
+
+    .contact-info {
+        padding: 10px;
+        margin-bottom: 15px;
+        font-size: 0.5em;
     }
 }
