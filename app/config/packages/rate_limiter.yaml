@@ -2,5 +2,5 @@ framework:
   rate_limiter:
     default:
       policy: 'fixed_window'
-      limit: 35
+      limit: 60
       interval: '1 minute'
