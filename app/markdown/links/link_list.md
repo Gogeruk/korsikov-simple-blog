@@ -8,7 +8,6 @@
 - [Mili](https://projectmili.com) - A really cool indie band based in Japan.
 - [The Modern Hermeticist](https://themodernhermeticist.com) - This influencer has a good YouTube channel about esoteric philosophy.
 - [Erutan](https://www.erutanmusic.com) - A lovely and charming singer/songwriter.
-- [Dig Deeper](https://digdeeper.club) - Somewhat schizophrenic, yet interesting blog about internet privacy.
 - [Clamavi De Profundis](https://youtube.com/@ClamaviDeProfundis) - Folk/fantasy music band.
 - [Eric Murphy](https://ericmurphy.xyz) - Privacy/web-dev tech influencer I like.
 - [Louis Rossmann](https://rossmanngroup.com) - Tech freedom fighter I like.
