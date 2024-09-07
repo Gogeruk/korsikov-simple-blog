@@ -16,12 +16,12 @@ use Twig\Error\SyntaxError;
  * Class ExceptionListener
  * @package App\EventListener
  */
-class ExceptionListener
+readonly class ExceptionListener
 {
     /**
      * @param Environment $twig
      */
-    public function __construct(private readonly Environment $twig) {}
+    public function __construct(private Environment $twig) {}
 
     /**
      * @param ExceptionEvent $event
@@ -30,7 +30,7 @@ class ExceptionListener
      * @throws RuntimeError
      * @throws SyntaxError
      */
-    public function onKernelException(ExceptionEvent $event)
+    public function onKernelException(ExceptionEvent $event): void
     {
         $exception = $event->getThrowable();
         $statusCode = $exception instanceof HttpExceptionInterface ? $exception->getStatusCode() : Response::HTTP_INTERNAL_SERVER_ERROR;

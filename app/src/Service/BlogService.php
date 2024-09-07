@@ -33,7 +33,7 @@ class BlogService
     }
 
     /**
-     * Get all markdown files
+     * Get all Markdown files
      *
      * @return Finder
      */
@@ -44,7 +44,7 @@ class BlogService
     }
 
     /**
-     * Parse the markdown file
+     * Parse the Markdown file
      *
      * @param SplFileInfo $file
      * @return array
@@ -112,7 +112,7 @@ class BlogService
     }
 
     /**
-     * Get links from markdown file
+     * Get links from Markdown file
      *
      * @return array
      * @throws Exception
@@ -130,7 +130,7 @@ class BlogService
     }
 
     /**
-     * Parse links from markdown content
+     * Parse links from Markdown content
      *
      * @param string $content
      * @return array

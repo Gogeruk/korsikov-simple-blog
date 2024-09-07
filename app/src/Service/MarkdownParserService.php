@@ -13,7 +13,7 @@ use Symfony\Component\Yaml\Yaml;
 class MarkdownParserService
 {
     /**
-     * Parse the markdown content
+     * Parse the Markdown content
      *
      * @param string $content
      * @return array

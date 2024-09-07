@@ -14,12 +14,12 @@ use Symfony\Component\RateLimiter\RateLimiterFactory;
  * Class RateLimiterListener
  * @package App\EventListener
  */
-class RateLimiterListener implements EventSubscriberInterface
+readonly class RateLimiterListener implements EventSubscriberInterface
 {
     /**
      * @param RateLimiterFactory $rateLimiter
      */
-    public function __construct(private readonly RateLimiterFactory $rateLimiter) {}
+    public function __construct(private RateLimiterFactory $rateLimiter) {}
 
     /**
      * @return string[]
