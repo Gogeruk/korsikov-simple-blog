@@ -1,5 +1,5 @@
 ---
-title: "The Ascent of the Soul"
+title: "Origen on Prayer"
 tags: ["quotation", "christianity"]
 description: "A quote from Origen on the ascent of the soul."
 date: "2024-06-22 19:00:00"
