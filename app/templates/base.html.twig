@@ -101,7 +101,7 @@
 <footer class="footer">
     <div class="container">
         <p>&copy; {{ "now"|date("Y") }} Mykyta's Website. All rights reserved.</p>
-        <p>Email: <a href="mailto:{{ getEnv('blog_email') }}">{{ getEnv('blog_email') }} ✨</a></p>
+        <p><a href="mailto:{{ getEnv('blog_email') }}">{{ getEnv('blog_email') }} ✨</a></p>
         <p><a href="{{ path('about_page') }}">About</a> | <a href="{{ path('privacy_policy_page') }}">Privacy Policy</a></p>
         <p><a href="{{ getEnv('github_url') }}/korsikov-simple-blog">Code on GitHub</a></p>
         <p><a href="{{ getEnv('domain_url') }}">{{ getEnv('domain_url') }}</a></p>

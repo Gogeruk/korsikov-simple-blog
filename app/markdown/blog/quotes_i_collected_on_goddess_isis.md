@@ -1,5 +1,5 @@
 ---
-title: "Quotes I collected on goddess Isis."
+title: "Quotes I collected on goddess Isis"
 tags: ["quotation", "pagan"]
 description: "Some quotes on the goddess Isis."
 date: "2024-09-07 18:00:00"
