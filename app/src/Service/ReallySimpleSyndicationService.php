@@ -24,7 +24,7 @@ class ReallySimpleSyndicationService
         $rssFeed .= '<channel>';
         $rssFeed .= '<title>Mykyta\'s Website</title>';
         $rssFeed .= '<link>' . $link . '</link>';
-        $rssFeed .= '<description>Mykyta Korsikov\'s personal blog covering topics like tech, occult, esoteric, fantasy, mythology, web development, internet privacy, cyber-security, religion, mysticism, magic, philosophy, and paganism.</description>';
+        $rssFeed .= '<description>Mykyta Korsikov\'s blog website about Christianity, philosophy, the occult, esoterica, fantasy, mythology, internet privacy and culture, cybersecurity, mysticism, magic, and paganism. Mykyta Korsikov, Korsikov Mykyta, Korsikov, Mykyta, Nick Korsikov, Korsikov Nick.</description>';
 
         foreach ($posts as $post) {
             $rssFeed .= '<item>';
