@@ -599,6 +599,64 @@ section h2 {
     color: #0a0a0a;
 }
 
+/* Business Card */
+.business-card-container {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin: 40px auto;
+    perspective: 1000px;
+}
+
+.business-card {
+    position: relative;
+    width: 100%;
+    padding: 30px;
+    background-color: rgba(26, 26, 26, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transform-style: preserve-3d;
+    transition: transform 0.8s, box-shadow 0.8s;
+    border: 1px solid #666666;
+    z-index: 10;
+}
+
+.business-card .avatar-container {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.business-card .avatar {
+    width: 85px;
+    height: 85px;
+}
+
+.business-card .header-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.business-card .navigation {
+    margin-bottom: 20px;
+}
+
+.business-card .card {
+    margin-bottom: 20px;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+
+.business-card .card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.business-card .card p {
+    text-align: center;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
     .filter-section ul, .posts-section ul {
@@ -713,5 +771,33 @@ section h2 {
         padding: 10px;
         margin-bottom: 15px;
         font-size: 0.5em;
+    }
+
+    /* Business Card */
+    .business-card-container {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    .business-card {
+        padding: 20px;
+    }
+
+    .business-card .avatar {
+        width: 75px;
+        height: 75px;
+    }
+
+    .business-card .header-title {
+        font-size: 1.6em;
+        margin-bottom: 15px;
+    }
+
+    .business-card .navigation {
+        margin-bottom: 15px;
+    }
+
+    .business-card .card h2 {
+        font-size: 1.3em;
     }
 }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card - Mykyta's Website</title>
+    <link rel="stylesheet" href="{{ asset('assets/styles.css') }}">
+</head>
+<body class="magic-book">
+<div class="business-card-container">
+    <div class="business-card">
+        <div class="avatar-container">
+            <a href="{{ path('home_page') }}">
+                <img src="{{ asset('assets/images/korsikov_blog_avatar.webp') }}" alt="Avatar" class="avatar">
+            </a>
+        </div>
+        <header>
+            <h1 class="header-title">Mykyta Korsikov</h1>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="{{ path('contact_page') }}" class="nav-button">Contact</a></li>
+                    <li><a href="{{ path('cv_page') }}" class="nav-button">CV</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="card">
+                <h2>About Me</h2>
+                <p>
+                    I am a passionate software developer with a drive to build innovative and efficient solutions.
+                    My expertise spans across various technologies, including Symfony and PHP, allowing me to create robust and scalable applications.
+                    I thrive on tackling complex challenges and crafting elegant code that delivers exceptional user experiences.
+                </p>
+            </section>
+        </main>
+    </div>
+</div>
+</body>
+</html>
