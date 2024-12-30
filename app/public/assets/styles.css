@@ -92,6 +92,16 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
+.nav-button::after {
+    content: "\2728";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffcc00;
+    font-size: 0.8em;
+}
+
 /* Card */
 .card h2, .about-section h2, .about-section h3, .privacy-policy-section h2, .privacy-policy-section h3 {
     color: #ffcc00;
@@ -603,9 +613,11 @@ section h2 {
 .business-card-container {
     position: relative;
     width: 100%;
-    max-width: 450px;
-    margin: 40px auto;
-    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 .business-card {
@@ -655,6 +667,20 @@ section h2 {
 
 .business-card .card p {
     text-align: center;
+}
+
+.business-card .avatar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 8px rgba(255, 204, 0, 0.8);
+}
+
+.business-card .nav-button:hover {
+    background-color: rgba(26, 26, 26, 0.95);
+    color: #ffffff;
+}
+
+.business-card .header-title:hover {
+    text-shadow: 0 0 5px rgba(255, 204, 0, 0.8);
 }
 
 /* Mobile */
