@@ -2,6 +2,10 @@
 
 If evetything is good, it should be running at [https://korsikov.com](https://korsikov.com)
 
+TODO: add HTMX
+TODO: make this readme more prof looking
+
+
 I created this blog website for several reasons:
 
 1. **Freedom of Expression**: I got tired of moderation on various forums, image boards, and obscure Discord servers. I simply wanted a place where I can do whatever I want whenever I want.
